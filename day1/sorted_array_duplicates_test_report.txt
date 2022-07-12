@@ -1,0 +1,9 @@
+=== RUN   TestSortedArrayDuplicates
+=== RUN   TestSortedArrayDuplicates/1
+=== RUN   TestSortedArrayDuplicates/2
+--- PASS: TestSortedArrayDuplicates (0.00s)
+    --- PASS: TestSortedArrayDuplicates/1 (0.00s)
+    --- PASS: TestSortedArrayDuplicates/2 (0.00s)
+PASS
+
+Process finished with the exit code 0
