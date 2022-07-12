@@ -1,0 +1,13 @@
+=== RUN   TestPivotIndex
+=== RUN   TestPivotIndex/1
+=== RUN   TestPivotIndex/2
+=== RUN   TestPivotIndex/3
+=== RUN   TestPivotIndex/4
+--- PASS: TestPivotIndex (0.00s)
+    --- PASS: TestPivotIndex/1 (0.00s)
+    --- PASS: TestPivotIndex/2 (0.00s)
+    --- PASS: TestPivotIndex/3 (0.00s)
+    --- PASS: TestPivotIndex/4 (0.00s)
+PASS
+
+Process finished with the exit code 0
