@@ -1,0 +1,13 @@
+=== RUN   TestPrimeCount
+--- PASS: TestPrimeCount (0.93s)
+=== RUN   TestPrimeCount/100
+    --- PASS: TestPrimeCount/100 (0.00s)
+=== RUN   TestPrimeCount/2
+    --- PASS: TestPrimeCount/2 (0.00s)
+=== RUN   TestPrimeCount/1000
+    --- PASS: TestPrimeCount/1000 (0.00s)
+=== RUN   TestPrimeCount/10000000
+    --- PASS: TestPrimeCount/10000000 (0.93s)
+PASS
+
+Process finished with the exit code 0
