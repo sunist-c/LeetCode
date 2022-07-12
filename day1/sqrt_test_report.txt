@@ -1,0 +1,27 @@
+=== RUN   TestSqrtWithBinary
+=== RUN   TestSqrtWithBinary/1
+=== RUN   TestSqrtWithBinary/2
+=== RUN   TestSqrtWithBinary/3
+=== RUN   TestSqrtWithBinary/4
+--- PASS: TestSqrtWithBinary (0.00s)
+    --- PASS: TestSqrtWithBinary/1 (0.00s)
+    --- PASS: TestSqrtWithBinary/2 (0.00s)
+    --- PASS: TestSqrtWithBinary/3 (0.00s)
+    --- PASS: TestSqrtWithBinary/4 (0.00s)
+PASS
+
+Process finished with the exit code 0
+
+=== RUN   TestSqrtWithNewton
+--- PASS: TestSqrtWithNewton (0.00s)
+=== RUN   TestSqrtWithNewton/1
+    --- PASS: TestSqrtWithNewton/1 (0.00s)
+=== RUN   TestSqrtWithNewton/2
+    --- PASS: TestSqrtWithNewton/2 (0.00s)
+=== RUN   TestSqrtWithNewton/3
+    --- PASS: TestSqrtWithNewton/3 (0.00s)
+=== RUN   TestSqrtWithNewton/4
+    --- PASS: TestSqrtWithNewton/4 (0.00s)
+PASS
+
+Process finished with the exit code 0
