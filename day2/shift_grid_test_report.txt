@@ -1,0 +1,9 @@
+=== RUN   TestShiftGrid
+=== RUN   TestShiftGrid/test-9
+=== RUN   TestShiftGrid/test-12
+--- PASS: TestShiftGrid (0.00s)
+    --- PASS: TestShiftGrid/test-9 (0.00s)
+    --- PASS: TestShiftGrid/test-12 (0.00s)
+PASS
+
+Process finished with the exit code 0
