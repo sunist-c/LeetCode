@@ -1,0 +1,11 @@
+=== RUN   TestArrayRankTransform
+=== RUN   TestArrayRankTransform/test_case
+=== RUN   TestArrayRankTransform/test_case_2
+=== RUN   TestArrayRankTransform/test_case_3
+--- PASS: TestArrayRankTransform (0.00s)
+    --- PASS: TestArrayRankTransform/test_case (0.00s)
+    --- PASS: TestArrayRankTransform/test_case_2 (0.00s)
+    --- PASS: TestArrayRankTransform/test_case_3 (0.00s)
+PASS
+
+Process finished with the exit code 0
