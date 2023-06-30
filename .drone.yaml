@@ -8,7 +8,7 @@ clone:
 
 steps:
   - name: golangci-lint
-    image: https://public.registry.sunist.cn/library/golangci-lint:golang1.20
+    image: public.registry.sunist.cn/library/golangci-lint:golang1.20
     pull: if-not-exist
     commands:
       - go mod tidy
