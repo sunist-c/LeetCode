@@ -1,0 +1,29 @@
+kind: pipeline
+type: docker
+name: TestingLeetcode
+
+clone:
+  disable: false
+  depth: 1
+
+steps:
+  - name: golangci-lint
+    image: https://public.registry.sunist.cn/library/golangci-lint:golang1.20
+    pull: if-not-exist
+    commands:
+      - go mod tidy
+      - golangci-lint run -v -D unused --timeout=30m
+
+  - name: leetcode-cases-testing
+    image: golang:1.20
+    pull: if-not-exist
+    commands:
+      - go mod tidy
+      - go test -v ./...
+
+  - name: benchmark-testing
+    image: golang:1.20
+    pull: if-not-exist
+    commands:
+      - go mod tidy
+      - go test -bench=. -benchtime=5s ./... -run=^$
