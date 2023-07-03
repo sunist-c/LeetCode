@@ -53,8 +53,7 @@ func convertStringToLinkedList(numberString string) *ListNode {
 		Next: nil,
 	}
 
-	runeArray := []rune(numberString)
-	for _, i := range runeArray {
+	for _, i := range numberString {
 		newNodeNumber, _ := strconv.Atoi(string(i))
 		newNode := &ListNode{
 			Val:  newNodeNumber,
