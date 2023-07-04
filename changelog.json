@@ -1,5 +1,13 @@
 [
   {
+    "2023-07-04": {
+      "name": "2679. 矩阵中的和",
+      "link": "https://leetcode.cn/problems/sum-in-a-matrix",
+      "cpu-usage-rank": "44.27%",
+      "memory-usage-rank": "90.8%"
+    }
+  },
+  {
     "2023-07-03": {
       "name": "445. 两数相加 II",
       "link": "https://leetcode.cn/problems/add-two-numbers-ii",
