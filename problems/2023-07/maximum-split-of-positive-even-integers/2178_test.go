@@ -49,10 +49,7 @@ func TestMaximumSplitOfPositiveEvenIntegers(t *testing.T) {
 				sum += i
 			}
 
-			if sum != input {
-				return false
-			}
-			return true
+			return sum == input
 		} else {
 			return len(output) == 0
 		}
