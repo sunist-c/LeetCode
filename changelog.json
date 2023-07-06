@@ -1,7 +1,7 @@
 [
   {
     "2023-07-05": {
-      "name": "2600. K 件物品的最大和\n",
+      "name": "2600. K 件物品的最大和",
       "link": "https://leetcode.cn/problems/k-items-with-the-maximum-sum",
       "cpu-usage-rank": "100%",
       "memory-usage-rank": "100%"
