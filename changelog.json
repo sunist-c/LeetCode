@@ -1,5 +1,14 @@
 [
   {
+    "2023-07-06": {
+      "name": "2178. 拆分成最多数目的正偶数之和",
+      "difficulty": "medium",
+      "link": "https://leetcode.cn/problems/maximum-split-of-positive-even-integers",
+      "cpu-usage-rank": "60%",
+      "memory-usage-rank": "35%"
+    }
+  },
+  {
     "2023-07-05": {
       "name": "2600. K 件物品的最大和",
       "difficulty": "easy",
