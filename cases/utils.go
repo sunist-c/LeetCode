@@ -24,7 +24,13 @@ func (s *statistics) end() (memoryAllocBytes uint64, elapsed time.Duration) {
 	s.startMutex.Unlock()
 	var endMemoryStatus runtime.MemStats
 	runtime.ReadMemStats(&endMemoryStatus)
-	return endMemoryStatus.TotalAlloc - s.memoryStatus.TotalAlloc, time.Now().Sub(s.startTime)
+	defer func() {
+		s.startMutex = sync.Mutex{}
+		s.endMutex = sync.Mutex{}
+		s.memoryStatus = &runtime.MemStats{}
+		s.startTime = time.Now()
+	}()
+	return endMemoryStatus.TotalAlloc - s.memoryStatus.TotalAlloc, time.Since(s.startTime)
 }
 
 func newStatistics() *statistics {
