@@ -1,5 +1,14 @@
 [
   {
+    "2023-07-07": {
+      "name": "2532. 过桥的时间",
+      "difficulty": "hard",
+      "link": "https://leetcode.cn/problems/time-to-cross-a-bridge",
+      "cpu-usage-rank": "85.71%",
+      "memory-usage-rank": "28.57%"
+    }
+  },
+  {
     "2023-07-06": {
       "name": "2178. 拆分成最多数目的正偶数之和",
       "difficulty": "medium",
