@@ -1,5 +1,14 @@
 [
   {
+    "2023-07-08": {
+      "name": "167. 两数之和 II - 输入有序数组",
+      "difficulty": "medium",
+      "link": "https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted",
+      "cpu-usage-rank": "98.81%",
+      "memory-usage-rank": "99.42%"
+    }
+  },
+  {
     "2023-07-07": {
       "name": "2532. 过桥的时间",
       "difficulty": "hard",
