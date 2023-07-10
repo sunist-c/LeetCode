@@ -1,5 +1,14 @@
 [
   {
+    "2023-07-10": {
+      "name": "16. 最接近的三数之和",
+      "difficulty": "medium",
+      "link": "https://leetcode.cn/problems/3sum-closest",
+      "cpu-usage-rank": "87.58%",
+      "memory-usage-rank": "72.22%"
+    }
+  },
+  {
     "2023-07-08": {
       "name": "167. 两数之和 II - 输入有序数组",
       "difficulty": "medium",
