@@ -11,7 +11,6 @@ steps:
     image: public.registry.sunist.cn/library/golangci-lint:golang1.20
     pull: if-not-exist
     commands:
-      - go mod tidy
       - golangci-lint run -v -D unused --timeout=30m
 
   - name: leetcode-cases-testing
@@ -20,10 +19,3 @@ steps:
     commands:
       - go mod tidy
       - go test -v ./...
-
-  - name: benchmark-testing
-    image: golang:1.20
-    pull: if-not-exist
-    commands:
-      - go mod tidy
-      - go test -bench=. -benchtime=5s ./... -run=^$
