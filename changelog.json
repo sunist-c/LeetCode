@@ -1,5 +1,14 @@
 [
   {
+    "2023-07-12": {
+      "name": "2544. 交替数字和",
+      "difficulty": "easy",
+      "link": "https://leetcode.cn/problems/alternating-digit-sum",
+      "cpu_usage_rank": "100%",
+      "memory_usage_rank": "100%"
+    }
+  },
+  {
     "2023-07-11": {
       "name": "1911. 最大子序列交替和",
       "difficulty": "medium",
