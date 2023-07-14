@@ -1,5 +1,14 @@
 [
   {
+    "2023-07-14": {
+      "name": "979. 在二叉树中分配硬币",
+      "difficulty": "medium",
+      "link": "https://leetcode.cn/problems/distribute-coins-in-binary-tree",
+      "cpu_usage_rank": "47.06%",
+      "memory_usage_rank": "64.71%"
+    }
+  },
+  {
     "2023-07-13": {
       "name": "931. 下降路径最小和",
       "difficulty": "medium",
