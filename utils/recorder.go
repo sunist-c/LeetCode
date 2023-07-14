@@ -39,8 +39,8 @@ func main() {
 		Name:            *problemName,
 		Difficulty:      difficultyString,
 		Link:            fmt.Sprintf("https://leetcode.cn/problems/%s", *problemShortLink),
-		CpuUsageRank:    fmt.Sprintf("%.2g%%", *cpuUsageRank*100.0),
-		MemoryUsageRank: fmt.Sprintf("%.2g%%", *memoryUsageRank*100.0),
+		CpuUsageRank:    fmt.Sprintf("%.2f%%", *cpuUsageRank*100.0),
+		MemoryUsageRank: fmt.Sprintf("%.2f%%", *memoryUsageRank*100.0),
 	}
 
 	output := map[string]Record{
