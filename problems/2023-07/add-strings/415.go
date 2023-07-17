@@ -7,8 +7,8 @@ func addStrings(num1, num2 string) string {
 		return "0"
 	}
 
-	var minLength, maxLength = 0, 0
-	var num1IsLonger = false
+	minLength, maxLength := 0, 0
+	num1IsLonger := false
 	if num1Len < num2Len {
 		minLength = num1Len
 		maxLength = num2Len
