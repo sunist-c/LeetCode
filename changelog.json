@@ -1,5 +1,14 @@
 [
   {
+    "2023-07-18": {
+      "name": "1851. 包含每个查询的最小区间",
+      "difficulty": "hard",
+      "link": "https://leetcode.cn/problems/minimum-interval-to-include-each-query",
+      "cpu_usage_rank": "50.00%",
+      "memory_usage_rank": "40.00%"
+    }
+  },
+  {
     "2023-07-17": {
       "name": "415. 字符串相加",
       "difficulty": "easy",
