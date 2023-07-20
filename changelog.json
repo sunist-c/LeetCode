@@ -1,5 +1,14 @@
 [
   {
+    "2023-07-20": {
+      "name": "918. 环形子数组的最大和",
+      "difficulty": "medium",
+      "link": "https://leetcode.cn/problems/maximum-sum-circular-subarray",
+      "cpu_usage_rank": "78.49%",
+      "memory_usage_rank": "91.40%"
+    }
+  },
+  {
     "2023-07-18": {
       "name": "1851. 包含每个查询的最小区间",
       "difficulty": "hard",
