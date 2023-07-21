@@ -1,7 +1,5 @@
 package xiaochu_game
 
-import "fmt"
-
 var (
 	directions = []point{
 		directionsUp, directionsDown, directionsLeft, directionsRight,
@@ -44,7 +42,7 @@ func (c *Chessboard) transform(p point) (result point) {
 
 func (c *Chessboard) findAll(minLength int) (needContinue bool) {
 	needContinue = false
-	for p, _ := range c.has {
+	for p := range c.has {
 		indexes := c.find(p)
 		if c.remove(minLength, indexes) {
 			needContinue = true
@@ -158,7 +156,6 @@ func (c *Chessboard) updateHas() {
 
 func (c *Chessboard) execute(steps int, minLength int) {
 	for i := 0; i < steps; i++ {
-		//c.print()
 		if !c.findAll(minLength) {
 			break
 		}
@@ -175,12 +172,6 @@ func (c *Chessboard) export() [][]int {
 	return result
 }
 
-func (c *Chessboard) print() {
-	for i, ints := range c.board {
-		fmt.Println(i, ":", ints)
-	}
-	fmt.Println("=============================")
-}
 func NewChessboard(board [][]int) *Chessboard {
 	c := Chessboard{
 		board: make([][]int, len(board)+2),
