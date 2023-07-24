@@ -42,6 +42,10 @@ func (cases *SpecialJudgeTestCases[InputStructure, OutputStructure]) JudgeFuncti
 		}
 }
 
+func (cases *SpecialJudgeTestCases[InputStructure, OutputStructure]) Run(t *testing.T) {
+	t.Run(cases.JudgeFunction())
+}
+
 func NewSpecialJudgeTestCases[InputStructure any, OutputStructure any](
 	testName string, implementation func(InputStructure) OutputStructure, specialJudge func(InputStructure, OutputStructure, OutputStructure) bool,
 	testCases ...SpecialJudgeTestCase[InputStructure, OutputStructure],

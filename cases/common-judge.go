@@ -41,6 +41,10 @@ func (cases *CommonJudgeTestCases[InputStructure, OutputStructure]) JudgeFunctio
 		}
 }
 
+func (cases *CommonJudgeTestCases[InputStructure, OutputStructure]) Run(t *testing.T) {
+	t.Run(cases.JudgeFunction())
+}
+
 func NewCommonTestCases[InputStructure any, OutputStructure comparable](
 	testName string, implementation func(InputStructure) OutputStructure,
 	testCases ...CommonJudgeTestCase[InputStructure, OutputStructure],
