@@ -1,6 +1,15 @@
 [
   {
     "2023-07-24": {
+      "name": "762. 二进制表示中质数个计算置位",
+      "difficulty": "easy",
+      "link": "https://leetcode.cn/problems/prime-number-of-set-bits-in-binary-representation",
+      "cpu_usage_rank": "100.00%",
+      "memory_usage_rank": "68.29%"
+    }
+  },
+  {
+    "2023-07-24": {
       "name": "771. 宝石与石头",
       "difficulty": "easy",
       "link": "https://leetcode.cn/problems/jewels-and-stones",
