@@ -8,5 +8,5 @@ func countPrimeSetBits(left int, right int) (result int) {
 		count := 665772 >> bits.OnesCount(uint(left)) & 1
 		result += count
 	}
-	return result
+	return result - 1
 }
