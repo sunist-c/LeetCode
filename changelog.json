@@ -1,5 +1,14 @@
 [
   {
+    "2023-07-25": {
+      "name": "2208. 将数组和减半的最少操作次数",
+      "difficulty": "medium",
+      "link": "https://leetcode.cn/problems/minimum-operations-to-halve-array-sum",
+      "cpu_usage_rank": "100.00%",
+      "memory_usage_rank": "90.00%"
+    }
+  },
+  {
     "2023-07-24": {
       "name": "762. 二进制表示中质数个计算置位",
       "difficulty": "easy",
