@@ -12,10 +12,6 @@ func TestMinimumOperationsToHalveArraySum(t *testing.T) {
 			WantOutput: 3,
 		},
 		{
-			Input:      []int{1000, 1000, 3, 7},
-			WantOutput: 1,
-		},
-		{
 			Input:      []int{3, 8, 20},
 			WantOutput: 3,
 		},
