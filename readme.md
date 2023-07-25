@@ -1,8 +1,8 @@
-# leetcode
+# Leetcode
 
 [![Build Status](https://drone.sunist.cn/api/badges/sunist-c/leetcode/status.svg)](https://drone.sunist.cn/sunist-c/leetcode) 
-[![Commit Badges](https://tool.lu/shield/ajax.html?color=%23007EC6&subject=2023.7.25&status=commited)](https://code.sunist.cn/sunist-c/leetcode) 
-[![Total Problems](https://tool.lu/shield/ajax.html?color=%23400090&subject=20+days&status=total)](https://code.sunist.cn/sunist-c/leetcode)
+[![Total Problems](https://img.shields.io/badge/2023.7.25-last_commit-blue)](https://code.sunist.cn/sunist-c/leetcode)
+[![Total Problems](https://img.shields.io/badge/20+_problems-8A2BE2)](https://code.sunist.cn/sunist-c/leetcode)
 
 这里是`sunist-c`的力扣刷题仓库，用于记录并提交刷题的过程。
 
@@ -12,4 +12,19 @@
 2. 每周至少完成一道中等难度题
 3. 每周完成至少一篇题解
 
-使用Gitea的Drone完成自动化测试，刷题日志和链接放到changelog中
+使用Gitea的Drone完成自动化测试，刷题日志和链接放到changelog.json中
+
+json格式如下：
+
+```json
+[
+  {
+	"date": "2023-06-30",
+	"name": "2490. 回环句",
+	"difficulty": "easy",
+	"link": "https://leetcode.cn/problems/circular-sentence",
+	"cpu_usage_rank": "100%",
+	"memory_usage_rank": "7.41%"
+  }
+]
+```

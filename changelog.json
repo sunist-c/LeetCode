@@ -1,182 +1,162 @@
 [
   {
-    "2023-07-25": {
-      "name": "2208. 将数组和减半的最少操作次数",
-      "difficulty": "medium",
-      "link": "https://leetcode.cn/problems/minimum-operations-to-halve-array-sum",
-      "cpu_usage_rank": "100.00%",
-      "memory_usage_rank": "90.00%"
-    }
+    "date": "2023-07-25",
+    "name": "2208. 将数组和减半的最少操作次数",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/minimum-operations-to-halve-array-sum",
+    "cpu_usage_rank": "100.00%",
+    "memory_usage_rank": "90.00%"
   },
   {
-    "2023-07-24": {
-      "name": "762. 二进制表示中质数个计算置位",
-      "difficulty": "easy",
-      "link": "https://leetcode.cn/problems/prime-number-of-set-bits-in-binary-representation",
-      "cpu_usage_rank": "100.00%",
-      "memory_usage_rank": "68.29%"
-    }
+    "date": "2023-07-24",
+    "name": "762. 二进制表示中质数个计算置位",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/prime-number-of-set-bits-in-binary-representation",
+    "cpu_usage_rank": "100.00%",
+    "memory_usage_rank": "68.29%"
   },
   {
-    "2023-07-24": {
-      "name": "771. 宝石与石头",
-      "difficulty": "easy",
-      "link": "https://leetcode.cn/problems/jewels-and-stones",
-      "cpu_usage_rank": "100.00%",
-      "memory_usage_rank": "45.57%"
-    }
+    "date": "2023-07-24",
+    "name": "771. 宝石与石头",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/jewels-and-stones",
+    "cpu_usage_rank": "100.00%",
+    "memory_usage_rank": "45.57%"
   },
   {
-    "2023-07-23": {
-      "name": "12. 整数转罗马数字",
-      "difficulty": "medium",
-      "link": "https://leetcode.cn/problems/integer-to-roman",
-      "cpu_usage_rank": "100.00%",
-      "memory_usage_rank": "93.61%"
-    }
+    "date": "2023-07-23",
+    "name": "12. 整数转罗马数字",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/integer-to-roman",
+    "cpu_usage_rank": "100.00%",
+    "memory_usage_rank": "93.61%"
   },
   {
-    "2023-07-21": {
-      "name": "13. 罗马数字转整数",
-      "difficulty": "easy",
-      "link": "https://leetcode.cn/problems/roman-to-integer",
-      "cpu_usage_rank": "100.00%",
-      "memory_usage_rank": "21.24%"
-    }
+    "date": "2023-07-21",
+    "name": "13. 罗马数字转整数",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/roman-to-integer",
+    "cpu_usage_rank": "100.00%",
+    "memory_usage_rank": "21.24%"
   },
   {
-    "2023-07-20": {
-      "name": "918. 环形子数组的最大和",
-      "difficulty": "medium",
-      "link": "https://leetcode.cn/problems/maximum-sum-circular-subarray",
-      "cpu_usage_rank": "78.49%",
-      "memory_usage_rank": "91.40%"
-    }
+    "date": "2023-07-20",
+    "name": "918. 环形子数组的最大和",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/maximum-sum-circular-subarray",
+    "cpu_usage_rank": "78.49%",
+    "memory_usage_rank": "91.40%"
   },
   {
-    "2023-07-18": {
-      "name": "1851. 包含每个查询的最小区间",
-      "difficulty": "hard",
-      "link": "https://leetcode.cn/problems/minimum-interval-to-include-each-query",
-      "cpu_usage_rank": "50.00%",
-      "memory_usage_rank": "40.00%"
-    }
+    "date": "2023-07-18",
+    "name": "1851. 包含每个查询的最小区间",
+    "difficulty": "hard",
+    "link": "https://leetcode.cn/problems/minimum-interval-to-include-each-query",
+    "cpu_usage_rank": "50.00%",
+    "memory_usage_rank": "40.00%"
   },
   {
-    "2023-07-17": {
-      "name": "415. 字符串相加",
-      "difficulty": "easy",
-      "link": "https://leetcode.cn/problems/add-strings",
-      "cpu_usage_rank": "82.85%",
-      "memory_usage_rank": "95.38%"
-    }
+    "date": "2023-07-17",
+    "name": "415. 字符串相加",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/add-strings",
+    "cpu_usage_rank": "82.85%",
+    "memory_usage_rank": "95.38%"
   },
   {
-    "2023-07-14": {
-      "name": "979. 在二叉树中分配硬币",
-      "difficulty": "medium",
-      "link": "https://leetcode.cn/problems/distribute-coins-in-binary-tree",
-      "cpu_usage_rank": "47.06%",
-      "memory_usage_rank": "64.71%"
-    }
+    "date": "2023-07-14",
+    "name": "979. 在二叉树中分配硬币",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/distribute-coins-in-binary-tree",
+    "cpu_usage_rank": "47.06%",
+    "memory_usage_rank": "64.71%"
   },
   {
-    "2023-07-13": {
-      "name": "931. 下降路径最小和",
-      "difficulty": "medium",
-      "link": "https://leetcode.cn/problems/minimum-falling-path-sum",
-      "cpu_usage_rank": "70.05%",
-      "memory_usage_rank": "12.90%"
-    }
+    "date": "2023-07-13",
+    "name": "931. 下降路径最小和",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/minimum-falling-path-sum",
+    "cpu_usage_rank": "70.05%",
+    "memory_usage_rank": "12.90%"
   },
   {
-    "2023-07-12": {
-      "name": "2544. 交替数字和",
-      "difficulty": "easy",
-      "link": "https://leetcode.cn/problems/alternating-digit-sum",
-      "cpu_usage_rank": "100%",
-      "memory_usage_rank": "100%"
-    }
+    "date": "2023-07-12",
+    "name": "2544. 交替数字和",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/alternating-digit-sum",
+    "cpu_usage_rank": "100%",
+    "memory_usage_rank": "100%"
   },
   {
-    "2023-07-11": {
-      "name": "1911. 最大子序列交替和",
-      "difficulty": "medium",
-      "link": "https://leetcode.cn/problems/maximum-alternating-subsequence-sum",
-      "cpu_usage_rank": "56%",
-      "memory_usage_rank": "60%"
-    }
+    "date": "2023-07-11",
+    "name": "1911. 最大子序列交替和",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/maximum-alternating-subsequence-sum",
+    "cpu_usage_rank": "56%",
+    "memory_usage_rank": "60%"
   },
   {
-    "2023-07-10": {
-      "name": "16. 最接近的三数之和",
-      "difficulty": "medium",
-      "link": "https://leetcode.cn/problems/3sum-closest",
-      "cpu-usage-rank": "87.58%",
-      "memory-usage-rank": "72.22%"
-    }
+    "date": "2023-07-10",
+    "name": "16. 最接近的三数之和",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/3sum-closest",
+    "cpu_usage_rank": "87.58%",
+    "memory_usage_rank": "72.22%"
   },
   {
-    "2023-07-08": {
-      "name": "167. 两数之和 II - 输入有序数组",
-      "difficulty": "medium",
-      "link": "https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted",
-      "cpu-usage-rank": "98.81%",
-      "memory-usage-rank": "99.42%"
-    }
+    "date": "2023-07-08",
+    "name": "167. 两数之和 II - 输入有序数组",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted",
+    "cpu_usage_rank": "98.81%",
+    "memory_usage_rank": "99.42%"
   },
   {
-    "2023-07-07": {
-      "name": "2532. 过桥的时间",
-      "difficulty": "hard",
-      "link": "https://leetcode.cn/problems/time-to-cross-a-bridge",
-      "cpu-usage-rank": "85.71%",
-      "memory-usage-rank": "28.57%"
-    }
+    "date": "2023-07-07",
+    "name": "2532. 过桥的时间",
+    "difficulty": "hard",
+    "link": "https://leetcode.cn/problems/time-to-cross-a-bridge",
+    "cpu_usage_rank": "85.71%",
+    "memory_usage_rank": "28.57%"
   },
   {
-    "2023-07-06": {
-      "name": "2178. 拆分成最多数目的正偶数之和",
-      "difficulty": "medium",
-      "link": "https://leetcode.cn/problems/maximum-split-of-positive-even-integers",
-      "cpu-usage-rank": "60%",
-      "memory-usage-rank": "35%"
-    }
+    "date": "2023-07-06",
+    "name": "2178. 拆分成最多数目的正偶数之和",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/maximum-split-of-positive-even-integers",
+    "cpu_usage_rank": "60%",
+    "memory_usage_rank": "35%"
   },
   {
-    "2023-07-05": {
-      "name": "2600. K 件物品的最大和",
-      "difficulty": "easy",
-      "link": "https://leetcode.cn/problems/k-items-with-the-maximum-sum",
-      "cpu-usage-rank": "100%",
-      "memory-usage-rank": "100%"
-    }
+    "date": "2023-07-05",
+    "name": "2600. K 件物品的最大和",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/k-items-with-the-maximum-sum",
+    "cpu_usage_rank": "100%",
+    "memory_usage_rank": "100%"
   },
   {
-    "2023-07-04": {
-      "name": "2679. 矩阵中的和",
-      "difficulty": "medium",
-      "link": "https://leetcode.cn/problems/sum-in-a-matrix",
-      "cpu-usage-rank": "44.27%",
-      "memory-usage-rank": "90.8%"
-    }
+    "date": "2023-07-04",
+    "name": "2679. 矩阵中的和",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/sum-in-a-matrix",
+    "cpu_usage_rank": "44.27%",
+    "memory_usage_rank": "90.8%"
   },
   {
-    "2023-07-03": {
-      "name": "445. 两数相加 II",
-      "difficulty": "medium",
-      "link": "https://leetcode.cn/problems/add-two-numbers-ii",
-      "cpu-usage-rank": "80%",
-      "memory-usage-rank": "56.88%"
-    }
+    "date": "2023-07-03",
+    "name": "445. 两数相加 II",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/add-two-numbers-ii",
+    "cpu_usage_rank": "80%",
+    "memory_usage_rank": "56.88%"
   },
   {
-    "2023-06-30": {
-      "name": "2490. 回环句",
-      "difficulty": "easy",
-      "link": "https://leetcode.cn/problems/circular-sentence",
-      "cpu-usage-rank": "100%",
-      "memory-usage-rank": "7.41%"
-    }
+    "date": "2023-06-30",
+    "name": "2490. 回环句",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/circular-sentence",
+    "cpu_usage_rank": "100%",
+    "memory_usage_rank": "7.41%"
   }
 ]
