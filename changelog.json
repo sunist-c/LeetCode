@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-07-26",
+    "name": "14. 最长公共前缀",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/longest_common_prefix",
+    "cpu_usage_rank": "27.11%",
+    "memory_usage_rank": "61.70%"
+  },
+  {
     "date": "2023-07-25",
     "name": "2208. 将数组和减半的最少操作次数",
     "difficulty": "medium",

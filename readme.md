@@ -1,8 +1,8 @@
 # Leetcode
 
 [![Build Status](https://drone.sunist.cn/api/badges/sunist-c/leetcode/status.svg)](https://drone.sunist.cn/sunist-c/leetcode) 
-[![Total Problems](https://img.shields.io/badge/2023.7.25-last_commit-blue)](https://code.sunist.cn/sunist-c/leetcode)
-[![Total Problems](https://img.shields.io/badge/20+_problems-8A2BE2)](https://code.sunist.cn/sunist-c/leetcode)
+[![Total Problems](https://img.shields.io/badge/2023.7.26-last_commit-blue)](https://code.sunist.cn/sunist-c/leetcode)
+[![Total Problems](https://img.shields.io/badge/21+_problems-8A2BE2)](https://code.sunist.cn/sunist-c/leetcode)
 
 这里是`sunist-c`的力扣刷题仓库，用于记录并提交刷题的过程。
 
