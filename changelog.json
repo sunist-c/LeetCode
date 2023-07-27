@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-07-27",
+    "name": "2500. 删除每行中的最大值",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/delete-greatest-value-in-each-row",
+    "cpu_usage_rank": "96.77%",
+    "memory_usage_rank": "77.42%"
+  },
+  {
     "date": "2023-07-26",
     "name": "14. 最长公共前缀",
     "difficulty": "easy",

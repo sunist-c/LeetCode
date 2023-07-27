@@ -1,8 +1,8 @@
 # Leetcode
 
 [![Build Status](https://drone.sunist.cn/api/badges/sunist-c/leetcode/status.svg)](https://drone.sunist.cn/sunist-c/leetcode) 
-[![Total Problems](https://img.shields.io/badge/2023.7.26-last_commit-blue)](https://code.sunist.cn/sunist-c/leetcode)
-[![Total Problems](https://img.shields.io/badge/21+_problems-8A2BE2)](https://code.sunist.cn/sunist-c/leetcode)
+[![Total Problems](https://img.shields.io/badge/2023.7.27-last_commit-blue)](https://code.sunist.cn/sunist-c/leetcode)
+[![Total Problems](https://img.shields.io/badge/22+_problems-8A2BE2)](https://code.sunist.cn/sunist-c/leetcode)
 
 这里是`sunist-c`的力扣刷题仓库，用于记录并提交刷题的过程。
 
@@ -18,13 +18,13 @@ json格式如下：
 
 ```json
 [
-  {
-	"date": "2023-06-30",
-	"name": "2490. 回环句",
-	"difficulty": "easy",
-	"link": "https://leetcode.cn/problems/circular-sentence",
-	"cpu_usage_rank": "100%",
-	"memory_usage_rank": "7.41%"
-  }
+	{
+		"date": "2023-06-30",
+		"name": "2490. 回环句",
+		"difficulty": "easy",
+		"link": "https://leetcode.cn/problems/circular-sentence",
+		"cpu_usage_rank": "100%",
+		"memory_usage_rank": "7.41%"
+	}
 ]
 ```
