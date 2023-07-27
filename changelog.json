@@ -8,6 +8,14 @@
     "memory_usage_rank": "77.42%"
   },
   {
+    "date": "2023-07-27",
+    "name": "35. 搜索插入位置",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/search-insert-position",
+    "cpu_usage_rank": "71.52%",
+    "memory_usage_rank": "99.39%"
+  },
+  {
     "date": "2023-07-26",
     "name": "14. 最长公共前缀",
     "difficulty": "easy",
