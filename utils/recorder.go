@@ -31,14 +31,14 @@ json格式如下：
 
 ` + "```json" + `
 [
-  {
-	"date": "2023-06-30",
-	"name": "2490. 回环句",
-	"difficulty": "easy",
-	"link": "https://leetcode.cn/problems/circular-sentence",
-	"cpu_usage_rank": "100%%",
-	"memory_usage_rank": "7.41%%"
-  }
+	{
+		"date": "2023-06-30",
+		"name": "2490. 回环句",
+		"difficulty": "easy",
+		"link": "https://leetcode.cn/problems/circular-sentence",
+		"cpu_usage_rank": "100%%",
+		"memory_usage_rank": "7.41%%"
+	}
 ]
 ` + "```\n"
 
