@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-07-28",
+    "name": "58. 最后一个单词的长度",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/length-of-last-word",
+    "cpu_usage_rank": "100.00%",
+    "memory_usage_rank": "10.03%"
+  },
+  {
     "date": "2023-07-27",
     "name": "2500. 删除每行中的最大值",
     "difficulty": "easy",
