@@ -8,16 +8,23 @@ import (
 	"os"
 	"path"
 	"sort"
+	"strconv"
+	"strings"
 	"time"
 )
 
 var markdownContent = `# Leetcode
 
 [![Build Status](https://drone.sunist.cn/api/badges/sunist-c/leetcode/status.svg)](https://drone.sunist.cn/sunist-c/leetcode) 
-[![Total Problems](https://img.shields.io/badge/%v-last_commit-blue)](https://code.sunist.cn/sunist-c/leetcode)
+[![Current Commit](https://img.shields.io/badge/%v-last_commit-blue)](https://code.sunist.cn/sunist-c/leetcode)
 [![Total Problems](https://img.shields.io/badge/%d+_problems-8A2BE2)](https://code.sunist.cn/sunist-c/leetcode)
 
-这里是` + "`sunist-c`" + `的力扣刷题仓库，用于记录并提交刷题的过程。
+[![Average Difficulty](https://img.shields.io/badge/difficulty-%.4f-%s)](https://code.sunist.cn/sunist-c/leetcode)
+[![Average Cpu Usage](https://img.shields.io/badge/cpu_usage_rank-%.2f%%25-%s)](https://code.sunist.cn/sunist-c/leetcode)
+[![Average Memory Usage](https://img.shields.io/badge/memory_usage_rank-%.2f%%25-%s)](https://code.sunist.cn/sunist-c/leetcode)
+
+这里是` +
+	"`sunist-c`" + `的力扣刷题仓库，用于记录并提交刷题的过程。
 
 刷题规约：
 
@@ -29,7 +36,9 @@ var markdownContent = `# Leetcode
 
 json格式如下：
 
-` + "```json" + `
+` +
+	"```json" +
+	`
 [
 	{
 		"date": "2023-06-30",
@@ -40,7 +49,14 @@ json格式如下：
 		"memory_usage_rank": "7.41%%"
 	}
 ]
-` + "```\n"
+` +
+	"```\n"
+
+const (
+	levelHigh   = "lightgreen"
+	levelMedium = "lightyellow"
+	levelLow    = "lightgray"
+)
 
 type Record struct {
 	Date            string `json:"date"`
@@ -150,17 +166,72 @@ func appendFile() {
 		panic(closeErr)
 	}
 
-	updateMarkdown(len(records))
+	updateMarkdown(statistic(records))
 }
 
-func updateMarkdown(length int) {
+func statistic(records []Record) (length int, difficulty float64, cpuUsage float64, memoryUsage float64) {
+	total := len(records)
+	difficultySum := 0.0
+	cpuUsageSum := 0.0
+	memoryUsageSum := 0.0
+	for _, record := range records {
+		cpuUsage, _ := strconv.ParseFloat(strings.TrimSuffix(record.CpuUsageRank, "%"), 64)
+		memoryUsage, _ := strconv.ParseFloat(strings.TrimSuffix(record.MemoryUsageRank, "%"), 64)
+		switch record.Difficulty {
+		case "easy":
+			difficultySum += 1.0
+		case "medium":
+			difficultySum += 4.0
+			cpuUsage *= 2.0
+			memoryUsage *= 2.0
+			total += 1
+		case "hard":
+			difficultySum += 9.0
+			cpuUsage *= 3.0
+			memoryUsage *= 3.0
+			total += 2
+		}
+		cpuUsageSum += cpuUsage
+		memoryUsageSum += memoryUsage
+	}
+
+	return len(records), difficultySum / float64(total), cpuUsageSum / float64(total), memoryUsageSum / float64(total)
+}
+
+func updateMarkdown(length int, difficulty float64, cpuUsage float64, memoryUsage float64) {
 	markdownFile := path.Join(*filePath, "readme.md")
 	file, openErr := os.Create(markdownFile)
 	if openErr != nil {
 		panic(openErr)
 	}
 
-	_, writeErr := io.WriteString(file, fmt.Sprintf(markdownContent, time.Now().Format("2006.1.2"), length))
+	difficultyColor, cpuUsageColor, memoryUsageColor := levelLow, levelLow, levelLow
+	if difficulty < 1.1 {
+		difficultyColor = levelLow
+	} else if difficulty < 2.1 {
+		difficultyColor = levelMedium
+	} else {
+		difficultyColor = levelHigh
+	}
+
+	if cpuUsage < 33 {
+		cpuUsageColor = levelLow
+	} else if cpuUsage < 66 {
+		cpuUsageColor = levelMedium
+	} else {
+		cpuUsageColor = levelHigh
+	}
+
+	if memoryUsage < 33 {
+		memoryUsageColor = levelLow
+	} else if memoryUsage < 66 {
+		memoryUsageColor = levelMedium
+	} else {
+		memoryUsageColor = levelHigh
+	}
+
+	_, writeErr := io.WriteString(file, fmt.Sprintf(markdownContent,
+		time.Now().Format("2006.1.2"), length, difficulty, difficultyColor, cpuUsage, cpuUsageColor, memoryUsage, memoryUsageColor))
 	if writeErr != nil {
 		panic(writeErr)
 	}
