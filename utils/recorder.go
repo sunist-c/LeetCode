@@ -205,7 +205,7 @@ func updateMarkdown(length int, difficulty float64, cpuUsage float64, memoryUsag
 		panic(openErr)
 	}
 
-	difficultyColor, cpuUsageColor, memoryUsageColor := levelLow, levelLow, levelLow
+	var difficultyColor, cpuUsageColor, memoryUsageColor string
 	if difficulty < 1.1 {
 		difficultyColor = levelLow
 	} else if difficulty < 2.1 {
