@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-07-29",
+    "name": "141. 环形链表",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/linked-list-cycle",
+    "cpu_usage_rank": "97.54%",
+    "memory_usage_rank": "64.63%"
+  },
+  {
     "date": "2023-07-28",
     "name": "58. 最后一个单词的长度",
     "difficulty": "easy",
