@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-07-31",
+    "name": "143. 重排链表",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/reorder-list",
+    "cpu_usage_rank": "83.64%",
+    "memory_usage_rank": "19.18%"
+  },
+  {
     "date": "2023-07-29",
     "name": "141. 环形链表",
     "difficulty": "easy",
