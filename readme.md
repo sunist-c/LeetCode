@@ -1,12 +1,11 @@
 # Leetcode
 
-[![Build Status](https://drone.sunist.cn/api/badges/sunist-c/leetcode/status.svg)](https://drone.sunist.cn/sunist-c/leetcode) 
-[![Current Commit](https://img.shields.io/badge/2023.8.2-last_commit-blue)](https://code.sunist.cn/sunist-c/leetcode)
-[![Total Problems](https://img.shields.io/badge/31+_problems-8A2BE2)](https://code.sunist.cn/sunist-c/leetcode)
+[![Current Commit](https://img.shields.io/badge/2023.8.4-last_commit-blue)](https://studio.sunist.work/sunist-c/leetcode)
+[![Total Problems](https://img.shields.io/badge/32+_problems-8A2BE2)](https://studio.sunist.work/sunist-c/leetcode)
 
-[![Average Difficulty](https://img.shields.io/badge/difficulty-1.9231-lightyellow)](https://code.sunist.cn/sunist-c/leetcode)
-[![Average Cpu Usage](https://img.shields.io/badge/cpu_usage_rank-82.27%25-lightgreen)](https://code.sunist.cn/sunist-c/leetcode)
-[![Average Memory Usage](https://img.shields.io/badge/memory_usage_rank-66.88%25-lightgreen)](https://code.sunist.cn/sunist-c/leetcode)
+[![Average Difficulty](https://img.shields.io/badge/difficulty-1.9057-lightyellow)](https://studio.sunist.work/sunist-c/leetcode)
+[![Average Cpu Usage](https://img.shields.io/badge/cpu_usage_rank-82.60%25-lightgreen)](https://studio.sunist.work/sunist-c/leetcode)
+[![Average Memory Usage](https://img.shields.io/badge/memory_usage_rank-67.04%25-lightgreen)](https://studio.sunist.work/sunist-c/leetcode)
 
 这里是`sunist-c`的力扣刷题仓库，用于记录并提交刷题的过程。
 
@@ -16,7 +15,7 @@
 2. 每周至少完成一道中等难度题
 3. 每周完成至少一篇题解
 
-使用Gitea的Drone完成自动化测试，刷题日志和链接放到changelog.json中
+使用Gitea-Actions完成自动化测试，刷题日志和链接放到changelog.json中
 
 json格式如下：
 
