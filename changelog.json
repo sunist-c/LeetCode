@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-07",
+    "name": "344. 反转字符串",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/reverse-string",
+    "cpu_usage_rank": "83.64%",
+    "memory_usage_rank": "81.54%"
+  },
+  {
     "date": "2023-08-04",
     "name": "67. 二进制求和",
     "difficulty": "easy",
