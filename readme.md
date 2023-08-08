@@ -1,3 +1,4 @@
+
 # Leetcode
 
 [![Current Commit](https://img.shields.io/badge/2023.8.7-last_commit-blue)](https://studio.sunist.work/sunist-c/leetcode)
@@ -31,3 +32,86 @@ json格式如下：
 	}
 ]
 ```
+
+## 如果你也想用
+
+1. Fork或者Clone本仓库
+2. 删除`changelog.json`中的内容(而不是删除文件)以及`problems`文件夹中的内容(删除文件)并修改`readme.md`中的内容
+3. 在`problems`文件夹中创建题目，建议的目录如下：
+    ```text
+    .
+    └── problems
+        ├──202x-x
+        |   ├── problem-name
+        |   |   ├── 114.go
+        |   |   ├── 114_test.go
+        |-- ...
+    ```
+    其中`xxx.go`是题目文件，`xxx_test.go`是测试文件，`xxx`是题目的编号，`problem-name`是题目的名称，`202x.x`是题目的日期
+4. 完成题目与测试文件的编写
+5. 执行测试
+6. 更新`changelog.json`和`readme.md`中的内容
+
+### 示例
+
+我们需要完成的题目是1+1，题目的编号是114，题目的名称是`add-two-numbers`，做题的时间是2023.6.1，题目的难度是`medium`，题目的链接是`https://leetcode-cn.com/problems/add-two-numbers/`
+
+1. 在`problems`文件夹中创建`2023-06`文件夹
+2. 在`2023-06`文件夹中创建`add-two-numbers`文件夹
+3. 在`add-two-numbers`文件夹中创建`114.go`,`114_test.go`和`114_pre.go`文件
+4. 编写题目代码：
+    在`114_pre.go`中，这里是用于定义题目给出的结构的地方(虽然此处并没有用到)：
+    ```go
+    package add_two_numbers
+    
+    type ListNode struct {
+        Val  int
+        Next *ListNode
+    }
+    ```
+    
+    在`114.go`中，实现`a+b`的题目要求函数：
+    ```go
+    package add_two_numbers
+    
+    func addTwoNumbers(a, b int) int {
+        return a + b
+    }
+    ```
+    
+    在`114_test.go`中，要注意这里的`addTwoNumbersInput`和`originFunction`作为适配器的设计思想：
+    
+    ```go
+    package add_two_numbers
+    
+    import (
+        "leetcode/cases"
+        "testing"
+    )
+   
+    type addTwoNumbersInput struct {
+        a int
+        b int
+    }
+    
+    func TestAddTwoNumbers(t *testing.T) {
+        testCases := []cases.CommonJudgeTestCase[addTwoNumbersInput, int]{
+            {
+                Input:  addTwoNumbersInput{a: 1, b: 1},
+                WantOutput: 2,
+            },
+            // ...cases
+        }
+   
+        originFunction := func(input addTwoNumbersInput) int {
+            return addTwoNumbers(input.a, input.b)
+        }
+        
+        cases.NewCommonTestCases("AddTowNumbers", originFunction, testCases...).Run(t)
+    }
+    ```
+5. 执行`recorder.go`，这个步骤会自动更新`readme.md`和`changelog.json`：
+    ```shell
+    go run utils/recorder.go utils/template.go -f ${LeetCode仓库根目录} -d ${难度} -l 'add-tow-numbers' -n '114. 1+1' -c ${CPU使用排名} -m ${内存使用排名}
+    ```
+6. 添加Commit并Push到你自己的仓库 
