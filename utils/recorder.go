@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"flag"
 	"fmt"
@@ -145,9 +146,19 @@ func statistic(records []Record) (length int, difficulty float64, cpuUsage float
 
 func updateMarkdown(length int, difficulty float64, cpuUsage float64, memoryUsage float64) {
 	markdownFile := path.Join(*filePath, "readme.md")
-	file, openErr := os.Create(markdownFile)
+	file, openErr := os.Open(markdownFile)
 	if openErr != nil {
 		panic(openErr)
+	}
+
+	scanner := bufio.NewScanner(file)
+	var lines = []string{""}
+	for scanner.Scan() {
+		lines = append(lines, scanner.Text())
+	}
+	closeErr := file.Close()
+	if closeErr != nil {
+		panic(closeErr)
 	}
 
 	var difficultyColor, cpuUsageColor, memoryUsageColor string
@@ -175,15 +186,26 @@ func updateMarkdown(length int, difficulty float64, cpuUsage float64, memoryUsag
 		memoryUsageColor = levelHigh
 	}
 
-	_, writeErr := io.WriteString(file, fmt.Sprintf(markdownContent,
-		time.Now().Format("2006.1.2"), length, difficulty, difficultyColor, cpuUsage, cpuUsageColor, memoryUsage, memoryUsageColor))
+	commitLineNumber, totalProblemsLineNumber, avgDifficultyLineNumber, avgCpuUsageLineNumber, avgMemoryUsageLineNumber := 3, 4, 6, 7, 8
+
+	lines[commitLineNumber] = fmt.Sprintf("[![Current Commit](https://img.shields.io/badge/%v-last_commit-blue)](https://studio.sunist.work/sunist-c/leetcode)", time.Now().Format("2006.1.2"))
+	lines[totalProblemsLineNumber] = fmt.Sprintf("[![Total Problems](https://img.shields.io/badge/%v-total_problems-blue)](https://studio.sunist.work/sunist-c/leetcode)", length)
+	lines[avgDifficultyLineNumber] = fmt.Sprintf("[![Average Difficulty](https://img.shields.io/badge/%.2f-average_difficulty-%s)](https://studio.sunist.work/sunist-c/leetcode)", difficulty, difficultyColor)
+	lines[avgCpuUsageLineNumber] = fmt.Sprintf("[![Average Cpu Usage](https://img.shields.io/badge/%.2f%%25-average_cpu_usage-%s)](https://studio.sunist.work/sunist-c/leetcode)", cpuUsage, cpuUsageColor)
+	lines[avgMemoryUsageLineNumber] = fmt.Sprintf("[![Average Memory Usage](https://img.shields.io/badge/%.2f%%25-average_memory_usage-%s)](https://studio.sunist.work/sunist-c/leetcode)", memoryUsage, memoryUsageColor)
+
+	writeFile, openWriteFileErr := os.Create(markdownFile)
+	if openWriteFileErr != nil {
+		panic(openWriteFileErr)
+	}
+	_, writeErr := io.WriteString(writeFile, strings.Join(lines, "\n"))
 	if writeErr != nil {
 		panic(writeErr)
 	}
 
-	closeErr := file.Close()
-	if closeErr != nil {
-		panic(closeErr)
+	closeWriteFileErr := writeFile.Close()
+	if closeWriteFileErr != nil {
+		panic(closeWriteFileErr)
 	}
 }
 
