@@ -14,6 +14,22 @@ import (
 	"time"
 )
 
+const (
+	levelHigh   = "lightgreen"
+	levelMedium = "lightyellow"
+	levelLow    = "lightgray"
+)
+
+var (
+	filePath         = flag.String("f", "", "file path")
+	outPath          = flag.String("o", "", "out path")
+	difficultyNumber = flag.Int("d", 0, "difficulty number: 0 - easy, 1 - medium, 2 - hard")
+	problemShortLink = flag.String("l", "", "problem link suffix")
+	problemName      = flag.String("n", "", "problem name")
+	cpuUsageRank     = flag.Float64("c", 0.0, "cpu usage rank")
+	memoryUsageRank  = flag.Float64("m", 0, "memory usage rank")
+)
+
 type Record struct {
 	Date            string `json:"date"`
 	Name            string `json:"name"`
@@ -188,17 +204,17 @@ func updateMarkdown(length int, difficulty float64, cpuUsage float64, memoryUsag
 
 	commitLineNumber, totalProblemsLineNumber, avgDifficultyLineNumber, avgCpuUsageLineNumber, avgMemoryUsageLineNumber := 3, 4, 6, 7, 8
 
-	lines[commitLineNumber] = fmt.Sprintf("[![Current Commit](https://img.shields.io/badge/%v-last_commit-blue)](https://studio.sunist.work/sunist-c/leetcode)", time.Now().Format("2006.1.2"))
-	lines[totalProblemsLineNumber] = fmt.Sprintf("[![Total Problems](https://img.shields.io/badge/%v-total_problems-blue)](https://studio.sunist.work/sunist-c/leetcode)", length)
-	lines[avgDifficultyLineNumber] = fmt.Sprintf("[![Average Difficulty](https://img.shields.io/badge/%.2f-average_difficulty-%s)](https://studio.sunist.work/sunist-c/leetcode)", difficulty, difficultyColor)
-	lines[avgCpuUsageLineNumber] = fmt.Sprintf("[![Average Cpu Usage](https://img.shields.io/badge/%.2f%%25-average_cpu_usage-%s)](https://studio.sunist.work/sunist-c/leetcode)", cpuUsage, cpuUsageColor)
-	lines[avgMemoryUsageLineNumber] = fmt.Sprintf("[![Average Memory Usage](https://img.shields.io/badge/%.2f%%25-average_memory_usage-%s)](https://studio.sunist.work/sunist-c/leetcode)", memoryUsage, memoryUsageColor)
+	lines[commitLineNumber] = fmt.Sprintf("[![Current Commit](https://img.shields.io/badge/%s-last_commit-blue)](https://studio.sunist.work/sunist-c/leetcode)", time.Now().Format("2006.1.2"))
+	lines[totalProblemsLineNumber] = fmt.Sprintf("[![Total Problems](https://img.shields.io/badge/%d+_problems-8A2BE2)](https://studio.sunist.work/sunist-c/leetcode)", length)
+	lines[avgDifficultyLineNumber] = fmt.Sprintf("[![Average Difficulty](https://img.shields.io/badge/difficulty-%.4f-%s)](https://studio.sunist.work/sunist-c/leetcode)", difficulty, difficultyColor)
+	lines[avgCpuUsageLineNumber] = fmt.Sprintf("[![Average Cpu Usage](https://img.shields.io/badge/cpu_usage_rank-%.2f%%25-%s)](https://studio.sunist.work/sunist-c/leetcode)", cpuUsage, cpuUsageColor)
+	lines[avgMemoryUsageLineNumber] = fmt.Sprintf("[![Average Memory Usage](https://img.shields.io/badge/memory_usage_rank-%.2f%%25-%s)](https://studio.sunist.work/sunist-c/leetcode)", memoryUsage, memoryUsageColor)
 
 	writeFile, openWriteFileErr := os.Create(markdownFile)
 	if openWriteFileErr != nil {
 		panic(openWriteFileErr)
 	}
-	_, writeErr := io.WriteString(writeFile, strings.Join(lines, "\n"))
+	_, writeErr := io.WriteString(writeFile, strings.Join(lines[1:], "\n"))
 	if writeErr != nil {
 		panic(writeErr)
 	}

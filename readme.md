@@ -1,12 +1,11 @@
-
 # Leetcode
 
-[![Current Commit](https://img.shields.io/badge/2023.8.7-last_commit-blue)](https://studio.sunist.work/sunist-c/leetcode)
-[![Total Problems](https://img.shields.io/badge/34+_problems-8A2BE2)](https://studio.sunist.work/sunist-c/leetcode)
+[![Current Commit](https://img.shields.io/badge/2023.8.8-last_commit-blue)](https://studio.sunist.work/sunist-c/leetcode)
+[![Total Problems](https://img.shields.io/badge/35+_problems-8A2BE2)](https://studio.sunist.work/sunist-c/leetcode)
 
-[![Average Difficulty](https://img.shields.io/badge/difficulty-1.8727-lightyellow)](https://studio.sunist.work/sunist-c/leetcode)
-[![Average Cpu Usage](https://img.shields.io/badge/cpu_usage_rank-82.94%25-lightgreen)](https://studio.sunist.work/sunist-c/leetcode)
-[![Average Memory Usage](https://img.shields.io/badge/memory_usage_rank-67.06%25-lightgreen)](https://studio.sunist.work/sunist-c/leetcode)
+[![Average Difficulty](https://img.shields.io/badge/difficulty-1.8772-lightyellow)](https://studio.sunist.work/sunist-c/leetcode)
+[![Average Cpu Usage](https://img.shields.io/badge/cpu_usage_rank-82.26%25-lightgreen)](https://studio.sunist.work/sunist-c/leetcode)
+[![Average Memory Usage](https://img.shields.io/badge/memory_usage_rank-67.26%25-lightgreen)](https://studio.sunist.work/sunist-c/leetcode)
 
 这里是`sunist-c`的力扣刷题仓库，用于记录并提交刷题的过程。
 
@@ -112,6 +111,6 @@ json格式如下：
     ```
 5. 执行`recorder.go`，这个步骤会自动更新`readme.md`和`changelog.json`：
     ```shell
-    go run utils/recorder.go utils/template.go -f ${LeetCode仓库根目录} -d ${难度} -l 'add-tow-numbers' -n '114. 1+1' -c ${CPU使用排名} -m ${内存使用排名}
+    go run utils/recorder.go -f ${LeetCode仓库根目录} -d ${难度} -l 'add-tow-numbers' -n '114. 1+1' -c ${CPU使用排名} -m ${内存使用排名}
     ```
 6. 添加Commit并Push到你自己的仓库 
