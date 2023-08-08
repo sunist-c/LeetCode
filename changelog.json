@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-08",
+    "name": "1749. 任意子数组和的绝对值的最大值",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/maximum-absolute-sum-of-any-subarray",
+    "cpu_usage_rank": "63.64%",
+    "memory_usage_rank": "72.73%"
+  },
+  {
     "date": "2023-08-07",
     "name": "344. 反转字符串",
     "difficulty": "easy",
