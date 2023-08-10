@@ -109,8 +109,18 @@ json格式如下：
         cases.NewCommonTestCases("AddTowNumbers", originFunction, testCases...).Run(t)
     }
     ```
-5. 执行`recorder.go`，这个步骤会自动更新`readme.md`和`changelog.json`：
+5. 执行`recorder.go`，这个步骤会自动统计并更新`readme.md`和`changelog.json`：
     ```shell
-    go run utils/recorder.go -f ${LeetCode仓库根目录} -d ${难度} -l 'add-tow-numbers' -n '114. 1+1' -c ${CPU使用排名} -m ${内存使用排名}
+    go run utils/recorder.go \
+      #最好使用绝对路径 
+      -f ${LeetCode仓库根目录} \ 
+      # 0-Easy, 1-Medium, 2-Difficult
+      -d ${难度} \ 
+      # leetcode的链接的题目名称部份
+      -l 'add-tow-numbers' \ 
+      # 题目名称,就是题目的标题
+      -n '114. 1+1' \ 
+      # 从leetcode上获取的排名, 请使用0-1的小数表示, 保留四位
+      -c ${CPU使用排名} -m ${内存使用排名} 
     ```
 6. 添加Commit并Push到你自己的仓库 
