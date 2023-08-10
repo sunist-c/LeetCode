@@ -1,11 +1,11 @@
 # Leetcode
 
-[![Current Commit](https://img.shields.io/badge/2023.8.9-last_commit-blue)](https://studio.sunist.work/sunist-c/leetcode)
-[![Total Problems](https://img.shields.io/badge/37+_problems-8A2BE2)](https://studio.sunist.work/sunist-c/leetcode)
+[![Current Commit](https://img.shields.io/badge/2023.8.10-last_commit-blue)](https://studio.sunist.work/sunist-c/leetcode)
+[![Total Problems](https://img.shields.io/badge/38+_problems-8A2BE2)](https://studio.sunist.work/sunist-c/leetcode)
 
-[![Average Difficulty](https://img.shields.io/badge/difficulty-1.8475-lightyellow)](https://studio.sunist.work/sunist-c/leetcode)
-[![Average Cpu Usage](https://img.shields.io/badge/cpu_usage_rank-82.86%25-lightgreen)](https://studio.sunist.work/sunist-c/leetcode)
-[![Average Memory Usage](https://img.shields.io/badge/memory_usage_rank-68.12%25-lightgreen)](https://studio.sunist.work/sunist-c/leetcode)
+[![Average Difficulty](https://img.shields.io/badge/difficulty-1.8333-lightyellow)](https://studio.sunist.work/sunist-c/leetcode)
+[![Average Cpu Usage](https://img.shields.io/badge/cpu_usage_rank-83.15%25-lightgreen)](https://studio.sunist.work/sunist-c/leetcode)
+[![Average Memory Usage](https://img.shields.io/badge/memory_usage_rank-68.65%25-lightgreen)](https://studio.sunist.work/sunist-c/leetcode)
 
 这里是`sunist-c`的力扣刷题仓库，用于记录并提交刷题的过程。
 

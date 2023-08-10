@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-10",
+    "name": "1287. 有序数组中出现次数超过25%的元素",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/element-appearing-more-than-25-in-sorted-array",
+    "cpu_usage_rank": "100.00%",
+    "memory_usage_rank": "100.00%"
+  },
+  {
     "date": "2023-08-09",
     "name": "1281. 整数的各位积和之差",
     "difficulty": "easy",
