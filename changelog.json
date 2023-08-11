@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-11",
+    "name": "1572. 矩阵对角线元素的和",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/matrix_diagonal_sum",
+    "cpu_usage_rank": "71.05%",
+    "memory_usage_rank": "100.00%"
+  },
+  {
     "date": "2023-08-10",
     "name": "1287. 有序数组中出现次数超过25%的元素",
     "difficulty": "easy",
