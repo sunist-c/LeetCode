@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-14",
+    "name": "617. 合并二叉树",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/merge_two_binary_trees",
+    "cpu_usage_rank": "88.64%",
+    "memory_usage_rank": "76.60%"
+  },
+  {
     "date": "2023-08-11",
     "name": "1572. 矩阵对角线元素的和",
     "difficulty": "easy",
