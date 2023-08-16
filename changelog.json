@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-16",
+    "name": "2682. 找出转圈游戏输家",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/find-the-losers-of-the-circular-game",
+    "cpu_usage_rank": "74.89%",
+    "memory_usage_rank": "55.32%"
+  },
+  {
     "date": "2023-08-15",
     "name": "833. 字符串中的查找与替换",
     "difficulty": "medium",
@@ -11,7 +19,7 @@
     "date": "2023-08-14",
     "name": "617. 合并二叉树",
     "difficulty": "easy",
-    "link": "https://leetcode.cn/problems/merge_two_binary_trees",
+    "link": "https://leetcode.cn/problems/merge-two-binary-trees",
     "cpu_usage_rank": "88.64%",
     "memory_usage_rank": "76.60%"
   },
@@ -19,7 +27,7 @@
     "date": "2023-08-11",
     "name": "1572. 矩阵对角线元素的和",
     "difficulty": "easy",
-    "link": "https://leetcode.cn/problems/matrix_diagonal_sum",
+    "link": "https://leetcode.cn/problems/matrix-diagonal-sum",
     "cpu_usage_rank": "71.05%",
     "memory_usage_rank": "100.00%"
   },
