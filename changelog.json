@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-17",
+    "name": "1365. 有多少小于当前数字的数字",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/how-many-numbers-are-smaller-than-the-current-number",
+    "cpu_usage_rank": "84.27%",
+    "memory_usage_rank": "24.72%"
+  },
+  {
     "date": "2023-08-16",
     "name": "2682. 找出转圈游戏输家",
     "difficulty": "easy",
