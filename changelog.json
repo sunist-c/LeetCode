@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-18",
+    "name": "面试题 013.02. 判定是否互为字符重排",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/check-permutation-icci",
+    "cpu_usage_rank": "100.00%",
+    "memory_usage_rank": "19.74%"
+  },
+  {
     "date": "2023-08-17",
     "name": "1365. 有多少小于当前数字的数字",
     "difficulty": "easy",
