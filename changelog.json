@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-19",
+    "name": "2235. 两整数相加",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/add-two-integers",
+    "cpu_usage_rank": "100.00%",
+    "memory_usage_rank": "64.72%"
+  },
+  {
     "date": "2023-08-18",
     "name": "面试题 013.02. 判定是否互为字符重排",
     "difficulty": "easy",
