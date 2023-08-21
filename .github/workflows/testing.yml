@@ -1,0 +1,16 @@
+name: Leetcode Testing Github Actions
+on: [push]
+
+jobs:
+  build:
+    name: Testing Leetcode Problems
+    runs-on: ubuntu-latest
+    steps:
+      - name: Initialize
+        uses: actions/checkout@v3
+      - name: Set up environment
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20'
+      - name: Testing Leetcode Problems
+        run: go test -v ./...
