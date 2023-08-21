@@ -1,5 +1,7 @@
 # Leetcode
 
+[![Leetcode Testing Github Actions](https://github.com/sunist-c/LeetCode/actions/workflows/testing.yml/badge.svg)](https://github.com/sunist-c/LeetCode/actions/workflows/testing.yml)
+
 [![Current Commit](https://img.shields.io/badge/2023.8.21-last_commit-blue)](https://studio.sunist.work/sunist-c/leetcode)
 [![Total Problems](https://img.shields.io/badge/46+_problems-8A2BE2)](https://studio.sunist.work/sunist-c/leetcode)
 

@@ -202,7 +202,7 @@ func updateMarkdown(length int, difficulty float64, cpuUsage float64, memoryUsag
 		memoryUsageColor = levelHigh
 	}
 
-	commitLineNumber, totalProblemsLineNumber, avgDifficultyLineNumber, avgCpuUsageLineNumber, avgMemoryUsageLineNumber := 3, 4, 6, 7, 8
+	commitLineNumber, totalProblemsLineNumber, avgDifficultyLineNumber, avgCpuUsageLineNumber, avgMemoryUsageLineNumber := 5, 6, 8, 9, 10
 
 	lines[commitLineNumber] = fmt.Sprintf("[![Current Commit](https://img.shields.io/badge/%s-last_commit-blue)](https://studio.sunist.work/sunist-c/leetcode)", time.Now().Format("2006.1.2"))
 	lines[totalProblemsLineNumber] = fmt.Sprintf("[![Total Problems](https://img.shields.io/badge/%d+_problems-8A2BE2)](https://studio.sunist.work/sunist-c/leetcode)", length)
