@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-21",
+    "name": "2237. 移动片段得到字符串",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/move-pieces-to-obtain-a-string",
+    "cpu_usage_rank": "60.00%",
+    "memory_usage_rank": "60.00%"
+  },
+  {
     "date": "2023-08-19",
     "name": "2235. 两整数相加",
     "difficulty": "easy",
