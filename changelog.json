@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-23",
+    "name": "171. Excel表列序号",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/excel-sheet-column-number",
+    "cpu_usage_rank": "100.00%",
+    "memory_usage_rank": "94.80%"
+  },
+  {
     "date": "2023-08-22",
     "name": "849. 到最近的人的最大距离",
     "difficulty": "medium",
