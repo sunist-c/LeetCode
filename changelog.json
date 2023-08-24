@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-24",
+    "name": "1267. 统计参与通信的服务器",
+    "difficulty": "medium",
+    "link": "https://leetcode.cn/problems/count-servers-that-communicate",
+    "cpu_usage_rank": "70.59%",
+    "memory_usage_rank": "70.59%"
+  },
+  {
     "date": "2023-08-23",
     "name": "171. Excel表列序号",
     "difficulty": "easy",
