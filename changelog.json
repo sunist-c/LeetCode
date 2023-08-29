@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-29",
+    "name": "766. 托普利茨矩阵",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/toeplitz-matrix",
+    "cpu_usage_rank": "83.33%",
+    "memory_usage_rank": "55.56%"
+  },
+  {
     "date": "2023-08-28",
     "name": "57. 插入区间",
     "difficulty": "medium",
