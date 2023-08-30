@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-08-30",
+    "name": "1662. 检查两个字符串数组是否相等",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/check-if-two-string-arrays-are-equivalent",
+    "cpu_usage_rank": "100.00%",
+    "memory_usage_rank": "37.04%"
+  },
+  {
     "date": "2023-08-29",
     "name": "766. 托普利茨矩阵",
     "difficulty": "easy",
