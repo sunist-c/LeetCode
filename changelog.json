@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-09-19",
+    "name": "2506. 统计相似字符串对的数目",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/count-pairs-of-similar-strings",
+    "cpu_usage_rank": "95.24%",
+    "memory_usage_rank": "80.95%"
+  },
+  {
     "date": "2023-09-04",
     "name": "449. 序列化和反序列化二叉搜索树",
     "difficulty": "medium",
