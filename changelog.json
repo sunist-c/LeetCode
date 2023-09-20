@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-09-20",
+    "name": "LCP 06. 拿硬币",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/na-ying-bi",
+    "cpu_usage_rank": "100.00%",
+    "memory_usage_rank": "56.67%"
+  },
+  {
     "date": "2023-09-19",
     "name": "2506. 统计相似字符串对的数目",
     "difficulty": "easy",
