@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-09-21",
+    "name": "1979. 找出数组的最大公约数",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/find-greatest-common-divisor-of-array",
+    "cpu_usage_rank": "88.37%",
+    "memory_usage_rank": "95.35%"
+  },
+  {
     "date": "2023-09-20",
     "name": "LCP 06. 拿硬币",
     "difficulty": "easy",
