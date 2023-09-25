@@ -1,5 +1,13 @@
 [
   {
+    "date": "2023-09-25",
+    "name": "1518. 换水问题",
+    "difficulty": "easy",
+    "link": "https://leetcode.cn/problems/water-bottles",
+    "cpu_usage_rank": "100.00%",
+    "memory_usage_rank": "100.00%"
+  },
+  {
     "date": "2023-09-21",
     "name": "1979. 找出数组的最大公约数",
     "difficulty": "easy",
